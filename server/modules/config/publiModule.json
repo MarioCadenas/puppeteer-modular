@@ -1,0 +1,163 @@
+
+[
+  {
+    "url": "https://www.abc.es/",
+    "device": "desktop",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_tres"]
+    }
+  },
+  {
+    "url": "https://www.abc.es/deportes/",
+    "device": "mobile",
+    "data":{
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "robapaginas_tres"]
+    }
+	},
+	{
+    "url": "https://www.abc.es/viajar/noticias/abci-cementerio-modernista-indianos-no-repararon-gastos-201810300234_noticia.html",
+    "device":  "mobile",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "cintillo_superior", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_local", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_local", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "robapaginas_tres_local", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_local", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_local", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres"]
+    }
+	},
+	{
+    "url": "https://www.abc.es/espana/comunidad-valenciana/abci-casado-pide-ciudadanos-no-facilite-unos-presupuestos-supondrian-nueva-recesion-201810301100_noticia.html",
+    "device":  "mobile",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "cintillo_superior", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres"]
+    }
+	},
+	{
+    "url": "https://www.abc.es/sociedad/abci-imagenes-peores-inundaciones-ultima-301540101861-20181030100044_galeria.html",
+    "device":  "mobile",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "cintillo_superior", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres"]
+    }
+  },
+  {
+    "url": "https://www.burgosconecta.es/deportes/",
+    "device": "mobile",
+    "data": {
+      "pos_desktop": ["boton_native", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "robapaginas", "robapaginas_dos", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_native", "megabanner", "patrocinio1", "patrocinio2", "patrocinio3", "robapaginas", "robapaginas_dos"]
+    }
+  },
+  {
+    "url": "https://www.abc.es/",
+    "device": "desktop",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_tres"]
+    }
+  },
+  {
+    "url": "https://www.abc.es/deportes/",
+    "device": "mobile",
+    "data":{
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "robapaginas_tres"]
+    }
+	},
+	{
+    "url": "https://www.abc.es/viajar/noticias/abci-cementerio-modernista-indianos-no-repararon-gastos-201810300234_noticia.html",
+    "device":  "mobile",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "cintillo_superior", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_local", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_local", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "robapaginas_tres_local", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_local", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_local", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres"]
+    }
+	},
+	{
+    "url": "https://www.abc.es/espana/comunidad-valenciana/abci-casado-pide-ciudadanos-no-facilite-unos-presupuestos-supondrian-nueva-recesion-201810301100_noticia.html",
+    "device":  "mobile",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "cintillo_superior", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres"]
+    }
+	},
+	{
+    "url": "https://www.abc.es/sociedad/abci-imagenes-peores-inundaciones-ultima-301540101861-20181030100044_galeria.html",
+    "device":  "mobile",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "cintillo_superior", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres"]
+    }
+  },
+  {
+    "url": "https://www.burgosconecta.es/deportes/",
+    "device": "mobile",
+    "data": {
+      "pos_desktop": ["boton_native", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "robapaginas", "robapaginas_dos", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_native", "megabanner", "patrocinio1", "patrocinio2", "patrocinio3", "robapaginas", "robapaginas_dos"]
+    }
+  },
+  {
+    "url": "https://www.abc.es/",
+    "device": "desktop",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_tres"]
+    }
+  },
+  {
+    "url": "https://www.abc.es/deportes/",
+    "device": "mobile",
+    "data":{
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "robapaginas_tres"]
+    }
+	},
+	{
+    "url": "https://www.abc.es/viajar/noticias/abci-cementerio-modernista-indianos-no-repararon-gastos-201810300234_noticia.html",
+    "device":  "mobile",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "cintillo_superior", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_local", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_local", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "robapaginas_tres_local", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_local", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_local", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres"]
+    }
+	},
+	{
+    "url": "https://www.abc.es/espana/comunidad-valenciana/abci-casado-pide-ciudadanos-no-facilite-unos-presupuestos-supondrian-nueva-recesion-201810301100_noticia.html",
+    "device":  "mobile",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "cintillo_superior", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "layer_inpage", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres"]
+    }
+	},
+	{
+    "url": "https://www.abc.es/sociedad/abci-imagenes-peores-inundaciones-ultima-301540101861-20181030100044_galeria.html",
+    "device":  "mobile",
+    "data": {
+      "pos_desktop": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "cintillo_superior", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_dos", "boton_native", "boton_native_cuatro", "boton_native_data", "boton_native_dos", "boton_native_tres", "boton_tres", "boton_uno", "cintillo", "megabanner", "megabanner_dos", "megabanner_tres", "patrocinio1", "patrocinio2", "patrocinio3", "promociones", "robapaginas", "robapaginas_cinco", "robapaginas_cuatro", "robapaginas_dos", "robapaginas_seis", "robapaginas_siete", "robapaginas_tres"]
+    }
+  },
+  {
+    "url": "https://www.burgosconecta.es/deportes/",
+    "device": "mobile",
+    "data": {
+      "pos_desktop": ["boton_native", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "robapaginas", "robapaginas_dos", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_native", "megabanner", "patrocinio1", "patrocinio2", "patrocinio3", "robapaginas", "robapaginas_dos"]
+    }
+  },
+  {
+    "url": "https://www.burgosconecta.es/deportes/",
+    "device": "mobile",
+    "data": {
+      "pos_desktop": ["boton_native", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "robapaginas", "robapaginas_dos", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_native", "megabanner", "patrocinio1", "patrocinio2", "patrocinio3", "robapaginas", "robapaginas_dos"]
+    }
+  },
+  {
+    "url": "https://www.burgosconecta.es/burgoscf/",
+    "device": "mobile",
+    "data": {
+      "pos_desktop": ["boton_native", "megabanner", "megabanner_dos", "patrocinio1", "patrocinio2", "patrocinio3", "robapaginas", "robapaginas_dos", "skyscraper_der", "skyscraper_izq"],
+      "pos_mobile": ["boton_native", "megabanner", "patrocinio1", "patrocinio2", "patrocinio3", "robapaginas", "robapaginas_dos"]
+    }
+  }
+]
