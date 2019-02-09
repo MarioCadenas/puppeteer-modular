@@ -4,13 +4,13 @@ const { chunk } = require('./utils');
 module.exports = {
   /** @type {array} pageManagers Instancias de navegadores por módulo */
   pageManagers: [],
-  /** @type {array} chunks Listado de configuraciones partido en el número de tabs por módulo */
-  chunks: [],
-  /** @type {array} queues Cola de ejecución por módulo */
-  queues: [],
+  /** @type {array} moduleChunks Configuraciones de cada módulo divididas por número de tabs */
+  moduleChunks: [],
+  /** @type {array} moduleQueues Cola de ejecución por módulo */
+  moduleQueues: [],
   /** @type {Object} globalConfig Configuración global para cada navegador */
   globalConfig: {
-    tabs: 9,
+    tabs: 5,
     headless: true
   },
   /**
@@ -22,10 +22,12 @@ module.exports = {
   async init({ tabs, headless, modules }) {
     this.globalConfig.tabs = tabs;
     this.globalConfig.headless = headless;
-    const responses = await Promise.all(modules.map(async module => this.startModule(module)));
-    await Promise.all(this.pageManagers.map(pageManager => pageManager.closeBrowser()));
 
-    return responses;
+    const results = await Promise.all(modules.map(async module => this.startModule(module)));
+
+    await Promise.all(this.pageManagers.map(async pageManager => pageManager.closeBrowser()));
+
+    return { executedAt: new Date().toLocaleString('es'), results };
   },
   /**
    * Inicia el módulo recibido
@@ -33,14 +35,18 @@ module.exports = {
    * @param {Object} module Datos definidos en el módulo
    * @returns {Promise<Object>} Todos los datos de navegación del módulo
    */
-  async startModule({ name, configs, dependencies, exec }) {
+  async startModule({ name, configs, dependencies, onNavigation, onEnd = result => result }) {
     this.pageManagers[name] = new Scrapper();
-    await this.pageManagers[name].openBrowser(this.globalConfig.headless);
-    this.chunks[name] = chunk(configs, this.globalConfig.tabs);
-    this.queues[name] = this.makeGenerator(name, dependencies, exec);
-    const response = await this.processQueue(name);
 
-    return { [name]: response };
+    await this.pageManagers[name].openBrowser(this.globalConfig.headless);
+
+    this.moduleChunks[name] = chunk(configs, this.globalConfig.tabs);
+    this.moduleQueues[name] = this.makeGenerator(name, dependencies, onNavigation);
+
+    const response = await this.processQueue(name);
+    const result = await onEnd(response);
+
+    return { [name]: result };
   },
   /**
    * Inicia la ejecución en la página correspondiente
@@ -51,8 +57,7 @@ module.exports = {
    */
   async runPage(moduleName, index, config) {
     try {
-      const results = await this.pageManagers[moduleName].runPage(index, config);
-      return results;
+      return await this.pageManagers[moduleName].runPage(index, config);
     } catch (error) {
       return { error };
     }
@@ -70,7 +75,7 @@ module.exports = {
 
     do {
       // eslint-disable-next-line no-await-in-loop
-      ({ done, value } = await this.queues[moduleName].next());
+      ({ done, value } = await this.moduleQueues[moduleName].next());
       if (value) { responses.push(...value); }
     } while (!done);
 
@@ -87,7 +92,7 @@ module.exports = {
    */
   async* makeGenerator(moduleName, dependencies, exec) {
     // eslint-disable-next-line no-restricted-syntax
-    for await (const c of this.chunks[moduleName]) {
+    for await (const c of this.moduleChunks[moduleName]) {
       await this.pageManagers[moduleName].openTabs(c.length);
       const results = await Promise.all(
         c.map(

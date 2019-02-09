@@ -7,3 +7,5 @@ test-results.xml
 /.nyc_output
 /coverage
 /server/results/*.json
+/var
+.env

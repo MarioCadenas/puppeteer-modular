@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://www.google.es",
+    "device": "desktop",
+    "data": {}
+  },
+  {
+    "url": "https://www.youtube.com",
+    "device": "desktop",
+    "data":{}
+  },
+  {
+    "url": "https://github.com/",
+    "device": "desktop",
+    "data": {}
+  },
+  {
+    "url": "https://rxjs-dev.firebaseapp.com/",
+    "device": "desktop",
+    "data":{}
+  },
+  {
+    "url": "http://reactivex.io/",
+    "device": "desktop",
+    "data": {}
+  }
+]
