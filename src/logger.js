@@ -21,12 +21,6 @@ module.exports = {
 };
 
 /** Private functions */
-
 const stringify = (...params) => Object
   .values(params)
-  .map((param) => {
-    if (typeof param === 'object') {
-      return JSON.stringify(param, null, 2);
-    }
-    return param;
-  });
+  .map(param => (typeof param === 'object' ? JSON.stringify(param, null, 2) : param));

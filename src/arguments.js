@@ -38,11 +38,11 @@ const args = yargs
 
 dotEnv.config();
 
-const { tabs, env, media, modules: modulesList, headless, enableLogs, write } = args;
+const { tabs, modules: modulesList, headless, enableLogs, write } = args;
 const writeModes = write.split(',');
 const moduleNames = modulesList ? modulesList.split(',') : [];
 
-if (moduleNames.length === 0) {
+if (!moduleNames.length) {
   throw new Error('Invalid argument: There must be at least one module to execute.');
 }
 
@@ -53,4 +53,4 @@ if (tabs > 9) {
 // eslint-disable-next-line global-require, import/no-dynamic-require
 const modules = moduleNames.map(module => require(`./modules/${module}`));
 
-module.exports = { tabs, modules, env, media, headless, enableLogs, writeModes };
+module.exports = { tabs, modules, headless, enableLogs, writeModes };
