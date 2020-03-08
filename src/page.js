@@ -1,5 +1,4 @@
-const puppeteer = require('puppeteer');
-const devices = require('puppeteer/DeviceDescriptors');
+const { chromium, devices } = require('playwright');
 const ValidationError = require('./validator');
 const Logger = require('./logger');
 
@@ -8,6 +7,7 @@ const iPhone = devices['iPhone 6'];
 class Scrapper {
   constructor() {
     this._browser = null;
+    this._context = null;
     this._pages = null;
     this.args = [
       '--no-sandbox',
@@ -24,8 +24,8 @@ class Scrapper {
   }
 
   /**
-   * @param {number} pageIndex Número de página que se va a ejecutar
-   * @param {function} fn Función que se va a ejecutar en el navegador
+   * @param {number} pageIndex
+   * @param {function} fn
    * @param  {...any} params
    * @returns {Promise}
    */
@@ -39,15 +39,13 @@ class Scrapper {
   }
 
   /**
-   * Abre el total de pestañas recibidas
-   *
-   * @param {number} [tabsNumber = 5] Número de tabs que se van a abrir
+   * @param {number} [tabsNumber = 5]
    * @returns {Promise}
    */
   async openTabs(tabsNumber = 5) {
     try {
-      await Promise.all([...Array(tabsNumber)].map(async () => this._browser.newPage()));
-      this._pages = await this._browser.pages();
+      await Promise.all([...Array(tabsNumber)].map(async () => this._context.newPage()));
+      this._pages = await this._context.pages();
       return this._pages;
     } catch (error) {
       Logger.error(error);
@@ -56,11 +54,8 @@ class Scrapper {
   }
 
   /**
-   * Ejecuta la navegación a la url indicada, y opcionalmente simula el dispositivo
-   * que venga en la configuración
-   *
-   * @param {number} pageIndex Número de página a ejecutar
-   * @param {Object} moduleData Datos del módulo
+   * @param {number} pageIndex
+   * @param {Object} moduleData
    * @returns {Promise}
    */
   async runPage(pageIndex, moduleData) {
@@ -81,9 +76,9 @@ class Scrapper {
         return { ...status, result: {} };
       }
 
-      Logger.log('analizando', url);
+      Logger.log('analyzing', url);
       const result = await this.evaluate(pageIndex, exec, dependencies, data, device);
-      Logger.log(`La url - ${url} ha sido analizada.`);
+      Logger.log(`URL - ${url} has been analyzed.`);
       return { ...status, result };
     } catch ({ message, data: { url = '' } = {} }) {
       Logger.error(message);
@@ -104,16 +99,18 @@ class Scrapper {
   }
 
   /**
-   * Abre un nuevo navegador
-   *
-   * @param {boolean} headless Define si abrir o no la interfaz de chromium
+   * @param {boolean} headless
    * @returns {Promise}
    */
   async openBrowser(headless) {
     try {
       if (!this._browser) {
         const { defaultViewport, timeouts: { BROWSER_TIMEOUT: timeout }, args } = this;
-        this._browser = await puppeteer.launch({ headless, defaultViewport, timeout, args });
+        this._browser = await chromium.launch({ headless, defaultViewport, timeout, args });
+        this._context = await this._browser.newContext({
+          viewport: iPhone.viewport,
+          userAgent: iPhone.userAgent
+        });
       }
       return this._browser;
     } catch (error) {
@@ -123,8 +120,6 @@ class Scrapper {
   }
 
   /**
-   * Cierra el navegador
-   *
    * @returns {Promise}
    */
   async closeBrowser() {

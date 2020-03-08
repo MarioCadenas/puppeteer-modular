@@ -15,14 +15,12 @@ const writeManager = {
   password: process.env.FTP_PASSWORD,
 
   /**
-   * Escribe en los lugares indicados por configuración.
-   *
    * @param {Object} data
    * @param {array} writeModes
    */
   async writeFile(data) {
     try {
-      Logger.timeEnd('analisis');
+      Logger.timeEnd('analyzing');
 
       if (writeModes.includes('disk')) {
         await this.diskWrite(data);
@@ -40,8 +38,6 @@ const writeManager = {
   },
 
   /**
-   * Escribe el archivo con los resultados en el directorio definido
-   *
    * @param {Object} data
   */
   async diskWrite(data) {
@@ -60,8 +56,6 @@ const writeManager = {
   },
 
   /**
-   * Escribe el archivo en el ftp definido en el .env
-   *
    * @param {Object} data
    * @returns {Promise}
    */
@@ -80,4 +74,4 @@ const writeManager = {
   }
 };
 
-module.exports = { writeManager };
+module.exports = writeManager;

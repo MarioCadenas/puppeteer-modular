@@ -2,22 +2,20 @@ const Scrapper = require('./page');
 const { chunk } = require('./utils');
 
 module.exports = {
-  /** @type {array} pageManagers Instancias de navegadores por módulo */
+  /** @type {array} pageManagers */
   pageManagers: [],
-  /** @type {array} moduleChunks Configuraciones de cada módulo divididas por número de tabs */
+  /** @type {array} moduleChunks */
   moduleChunks: [],
-  /** @type {array} moduleQueues Cola de ejecución por módulo */
+  /** @type {array} moduleQueues */
   moduleQueues: [],
-  /** @type {Object} globalConfig Configuración global para cada navegador */
+  /** @type {Object} globalConfig */
   globalConfig: {
     tabs: 5,
     headless: true
   },
   /**
-   * Inicia los módulos
-   *
-   * @param {Object} Objeto con la configuración global, y el listado de módulos
-   * @returns {Promise<Object>} Objeto con todas las respuestas de los módulos
+   * @param {Object}
+   * @returns {Promise<Object>}
    */
   async init({ tabs, headless, modules }) {
     this.globalConfig.tabs = tabs;
@@ -30,10 +28,8 @@ module.exports = {
     return { executedAt: new Date().toLocaleString('es'), results };
   },
   /**
-   * Inicia el módulo recibido
-   *
-   * @param {Object} module Datos definidos en el módulo
-   * @returns {Promise<Object>} Todos los datos de navegación del módulo
+   * @param {Object} module
+   * @returns {Promise<Object>}
    */
   async startModule({ name, configs, dependencies, onNavigation, onEnd = result => result }) {
     this.pageManagers[name] = new Scrapper();
@@ -49,11 +45,9 @@ module.exports = {
     return { [name]: result };
   },
   /**
-   * Inicia la ejecución en la página correspondiente
-   *
-   * @param {string} moduleName Nombre del módulo
-   * @param {number} index Número de página a ejecutar
-   * @param {Promise<Object>} config Datos a utilizar en la navegación
+   * @param {string} moduleName
+   * @param {number} index
+   * @param {Promise<Object>} config
    */
   async runPage(moduleName, index, config) {
     try {
@@ -63,18 +57,14 @@ module.exports = {
     }
   },
   /**
-   * Procesa las llamadas al generador, se encarga de llamar al siguiente elemento
-   * de la cola cuando el actual ha terminado.
-   *
-   * @param {string} moduleName Nombre del módulo a procesar
-   * @returns {Promise<Object>} Objeto con todas las respuestas de todas las navegaciones del módulo
+   * @param {string} moduleName
+   * @returns {Promise<Object>}
    */
   async processQueue(moduleName) {
     let done = false, value = null;
     const responses = [];
 
     do {
-      // eslint-disable-next-line no-await-in-loop
       ({ done, value } = await this.moduleQueues[moduleName].next());
       if (value) { responses.push(...value); }
     } while (!done);
@@ -82,16 +72,12 @@ module.exports = {
     return responses;
   },
   /**
-   * Recorre las configuraciones del módulo, y las ejecuta, quedando a la espera
-   * de que se invoque el método next()
-   *
-   * @param {string} moduleName Nombre del módulo
-   * @param {Object} dependencies dependencias definidas en el módulo
-   * @param {function} exec función que se va a ejecutar en la navegación
-   * @yields {Promise<Object>} objeto con todas las respuestas de cada navegación
+   * @param {string} moduleName
+   * @param {Object} dependencies
+   * @param {function} exec
+   * @yields {Promise<Object>}
    */
   async* makeGenerator(moduleName, dependencies, exec) {
-    // eslint-disable-next-line no-restricted-syntax
     for await (const c of this.moduleChunks[moduleName]) {
       await this.pageManagers[moduleName].openTabs(c.length);
       const results = await Promise.all(

@@ -51,6 +51,6 @@ if (tabs > 9) {
 }
 
 // eslint-disable-next-line global-require, import/no-dynamic-require
-const modules = moduleNames.map(module => require(`./modules/${module}`));
+const modules = moduleNames.map(module => require(`../modules/${module}`));
 
 module.exports = { tabs, modules, headless, enableLogs, writeModes };

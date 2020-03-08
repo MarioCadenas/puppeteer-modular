@@ -23,10 +23,8 @@ const getDate = (date) => {
 };
 
 /**
- * Devuelve un array de varios arrays del tamaño recibido.
- *
- * @param {array} arr Array a partir
- * @param {number} size Tamaño de los arrays
+ * @param {array} arr
+ * @param {number} size
  */
 const chunk = (arr, size) => Array.from(
   { length: Math.ceil(arr.length / size) },

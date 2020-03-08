@@ -1,10 +1,10 @@
 const args = require('./arguments');
 const manager = require('./manager');
 const Logger = require('./logger');
-const { writeManager } = require('./write-manager');
+const writeManager = require('./write-manager');
 
 Logger.log('processing...');
-Logger.timeStart('analisis');
+Logger.timeStart('analyzing');
 
 manager
   .init(args)
